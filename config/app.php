@@ -180,6 +180,7 @@ return [
         // HTML & FORMS
         Collective\Html\HtmlServiceProvider::class,
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
