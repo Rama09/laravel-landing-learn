@@ -1,5 +1,5 @@
 <!--Hero_Section-->
-<section id="hero_section" class="top_cont_outer">
+<section id="home" class="top_cont_outer">
     <div class="hero_wrapper">
         <div class="container">
             <div class="hero_section">
@@ -20,7 +20,7 @@
 </section>
 <!--Hero_Section-->
 
-<section id="aboutUs"><!--Aboutus-->
+<section id="about"><!--Aboutus-->
     <div class="inner_wrapper">
         <div class="container">
             <h2>About Us</h2>
