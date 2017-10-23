@@ -15,6 +15,7 @@ class IndexController extends Controller
     {
         $pages = Page::all();
         $portfolio = Portfolio::get(['name', 'filter', 'images']);
+        $portfolio_tags = \DB::table('portfolios')->distinct()->pluck('filter');
         $people = People::take(3)->get();
         $services = Service::where('id', '<', 20)->get();
 
@@ -37,6 +38,7 @@ class IndexController extends Controller
             'pages' => $pages,
             'services' => $services,
             'portfolio' => $portfolio,
+            'portfolio_tags' => $portfolio_tags,
             'people' => $people,
         ]);
     }
