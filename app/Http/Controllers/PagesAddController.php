@@ -37,7 +37,7 @@ class PagesAddController extends Controller
             $page->fill($input);
 
             if($page->save()) {
-                return redirect('admin')->with('status', 'Страница добавлена');
+                return redirect('admin/pages')->with('status', 'Страница добавлена');
             }
         }
 

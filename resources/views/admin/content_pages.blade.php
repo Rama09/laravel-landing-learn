@@ -26,7 +26,7 @@
                         'method' => 'POST'
                     ]) }}
 
-                        {{ Form::hidden('action', 'delete') }}
+                        {{ method_field('DELETE') }}
                         {{ Form::button('Удалить', ['class' => 'btn btn-danger', 'type' => 'submit']) }}
 
                     {{ Form::close() }}

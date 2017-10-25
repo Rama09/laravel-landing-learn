@@ -18,7 +18,7 @@ class CreatePagesTable extends Migration
             $table->string('name', 100);
             $table->string('alias', 100);
             $table->text('text');
-            $table->string('images', 100);
+            $table->string('images', 100)->nullable();
 
             $table->timestamps();
         });
