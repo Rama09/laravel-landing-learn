@@ -4,14 +4,14 @@
 
         @if($key%2 == 0)
             <!--Hero_Section-->
-            <section id="home" class="top_cont_outer">
+            <section id="{{ $page->alias }}" class="top_cont_outer">
                 <div class="hero_wrapper">
                     <div class="container">
                         <div class="hero_section">
                             <div class="row">
                                 <div class="col-lg-5 col-sm-7">
                                     <div class="top_left_cont zoomIn wow animated">
-                                        <h2>We create <strong>awesome</strong> web templates</h2>
+                                        <h2>{{ $page->name }}</h2>
                                         {!! $page->text !!}
                                         <a href="{{ route('page', ['alias' => $page->alias]) }}" class="read_more2">Read more</a> </div>
                                 </div>
@@ -26,7 +26,7 @@
             <!--Hero_Section-->
         @else
             <!--Aboutus-->
-            <section id="about">
+            <section id="{{ $page->alias }}">
                 <div class="inner_wrapper">
                     <div class="container">
                         <h2>{{ $page->name }}</h2>
